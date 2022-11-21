@@ -1,0 +1,26 @@
+
+div
+{
+    border: solid 1px;
+    width: 90%;
+    height: 40%;
+}
+
+table
+{
+    width:100%;
+}
+
+th
+{
+    border: solid 1px;
+    width: 11%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+td
+{
+    border: solid 1px;
+    width: 11%;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1> 이번 주 학식은?</h1>
+        <div>
+            <table>
+                <tr>
+        {% for text in day%}
+            {%if text != ''%}
+                <th>
+                    {{text}}
+                </th>
+            {%endif%}
+        {%endfor%}
+                </tr>
+            </table>
+            <table>
+                    {% for text in menu%}
+                        {%if text != ''%}
+                        {%set str = text.split('\n')%}
+                            <td>
+                                {%for i in str%}
+                                <p>
+                                    
+                                        {{i}}
+                                </p>
+                                {%endfor%}
+                            </td>
+                        {%endif%}
+                    {%endfor%}
+            </table>
+        </div>
+    </body>
+</html>
