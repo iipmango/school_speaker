@@ -26,4 +26,4 @@ def crawl():
 
     dbcon.dbInsert(json.dumps(menu_date, ensure_ascii = False), json.dumps(menu, ensure_ascii = False))
             
-# crawl()
+crawl()

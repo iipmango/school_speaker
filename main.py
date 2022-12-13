@@ -27,4 +27,4 @@ def main():
     return render_template('main.html', **obj)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port='500', debug=True)
